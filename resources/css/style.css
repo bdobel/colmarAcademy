@@ -1,0 +1,115 @@
+/* Universal Styles */
+
+html {
+  font-family: "helvetica", sans-serif;
+  font-size: 12px;
+}
+/*
+Header
+
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  border-bottom: solid 1px #c6c1c1;
+  background-color: white;
+  padding: 0 24px;
+  height: 64px;
+}
+
+header .brand {
+  display: flex;
+  align-items: center;
+}
+
+.header img {
+  height: 32px;
+}
+
+.school {
+  font-size: 1.2rem;
+  /*font-weight: bold;
+}
+
+.colorTwo {
+  color: gray;
+}
+
+header img {
+  flex: 1;
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 3.5rem;
+}
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  header .brand {
+    display: none;
+  }
+
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    padding: .5rem 0;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+
+  header .mobile .button {
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+}
+*/
+
+.banner {
+  background-color: #dfdfdf;
+}
+
+.banner img {
+  width: 60%;
+}
+
+.banner-content .banner-button {
+  margin-top: 1.625rem;
+  padding: 1.25rem 7.25rem;
+}
+
+.banner-button {
+  color: white;
+  background-color: #4a4a4a;
+}
