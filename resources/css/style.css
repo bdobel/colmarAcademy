@@ -4,8 +4,8 @@ html {
   font-family: "helvetica", sans-serif;
   font-size: 12px;
 }
-/*
-Header
+
+/* Header */
 
 header {
   position: fixed;
@@ -28,7 +28,7 @@ header .brand {
 
 .school {
   font-size: 1.2rem;
-  /*font-weight: bold;
+  font-weight: bold;
 }
 
 .colorTwo {
