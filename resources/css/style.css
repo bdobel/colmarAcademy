@@ -4,26 +4,83 @@ html {
   color: #888888;
 }
 
+header {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 1000;
+  height: 32px;
+  padding: 16px 0;
+  display: flex;
+}
+
+.navigation-desktop {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-desktop .brand {
+  align-items: center;
+}
+
+.navigation-desktop span {
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-desktop-links ul {
+  display: flex;
+}
+
+
+.navigation-mobile {
+  display: none;
+}
+
+.navigation-mobile ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* navigation bar media queries */
+@media only screen and (max-width: 760px) {
+  .navigation-desktop {
+    display: none;
+  }
+
+  .navigation-mobile {
+    display: block;
+    width: 100%;
+  }
+
+
 
 
 
 /* banner */
 .banner {
+  display: inline-flex;
   background-color: #D3D3D3;
+  margin-top: 64px;
 }
 
 .banner-image {
+  width: 60%;
   padding: 32px 24px;
 }
 
 .banner-image img {
-  width: 60%;
+  position: relative;
+width: 100%;
 }
 
 .banner-content {
+  width: 40%;
   color: #585858;
   font-weight: bold;
-  padding: 0 5rem 2.5rem 5rem;
+  /* padding: 0 5rem 2.5rem 5rem; */
 }
 
 .banner-title {
@@ -64,6 +121,7 @@ html {
 }
 
 .feature {
+  overflow: visible;
   width: 33%;
   flex: 1;
   background-color: white;
