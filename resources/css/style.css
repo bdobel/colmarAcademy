@@ -1,39 +1,67 @@
-/* universal */
+/* universal styles */
 html {
   font-family: "helvetica", sans-serif;
+  font-size: 12px;
   color: #888888;
 }
 
+/* header */
 header {
-  width: 100%;
   position: fixed;
-  background-color: white;
+  width: 100%;
   z-index: 1000;
   height: 32px;
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: flex;
+  background-color: white;
 }
 
+/* nav for desktop */
 .navigation-desktop {
+  width: 100%;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .navigation-desktop .brand {
+  display: flex;
   align-items: center;
 }
 
 .navigation-desktop span {
   align-items: center;
   justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.school.colorOne{
+
+}
+.school.colorTwo{
+  color: gray;
+}
+
+.navigation-desktop-links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .navigation-desktop-links ul {
   display: flex;
+  align-content: flex-end;
+  font-size: 1.20rem;
 }
 
+.navigation-desktop-links li {
+  padding-left: 16px;
+}
 
+/* nav for mobile */
 .navigation-mobile {
   display: none;
 }
@@ -44,8 +72,8 @@ header {
   align-items: center;
 }
 
-/* navigation bar media queries */
-@media only screen and (max-width: 760px) {
+/* nav bar media queries */
+@media only screen and (max-width: 600px) {
   .navigation-desktop {
     display: none;
   }
@@ -54,56 +82,85 @@ header {
     display: block;
     width: 100%;
   }
+}
 
-
-
-
+/* content */
+.main-content {
+  padding-top: 64px;
+}
 
 /* banner */
 .banner {
   display: inline-flex;
   background-color: #D3D3D3;
-  margin-top: 64px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .banner-image {
   width: 60%;
-  padding: 32px 24px;
+  padding-left: 24px;
 }
 
 .banner-image img {
   position: relative;
-width: 100%;
+  width: 100%;
 }
 
 .banner-content {
-  width: 40%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+  max-width: 30%;
   color: #585858;
   font-weight: bold;
-  /* padding: 0 5rem 2.5rem 5rem; */
 }
 
 .banner-title {
-  font-size: 2rem;
+  font-size: 3rem;
+}
+
+.enroll {
+  margin-top: 2rem;
 }
 
 .enroll span {
-
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 .button {
-
+  text-align: center;
   margin-top: 1.625rem;
   padding: 1.25rem 7.25rem;
-}
-
-.button {
   color: white;
   background-color: #4a4a4a;
+  /*white-space: nowrap;*/
 }
 
+/* banner media queries */
+@media only screen and (max-width: 1024px) {
+  .banner-title {
+    font-size: 2.25rem;
+  }
 
-/* section */
+  .enroll {
+    margin-top: 1.0rem;
+  }
+
+  .enroll span {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .button {
+    margin-top: 1.0rem;
+    padding: 1.25rem 0rem;
+  }
+}
+
+/* section: one*/
 .section-title {
   color: #585858;
   font-size: 2rem;
