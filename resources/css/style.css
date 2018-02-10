@@ -155,7 +155,7 @@ header {
   }
 }
 
-/* section: one*/
+/* section: one */
 .first {
   display: inline-flex;
 }
@@ -232,13 +232,15 @@ display: flex;
 .readMore {
   color: #1fc3e0;
 }
+
+/* section two */
 .section-title {
   color: #585858;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
   background-color: #f3f3f3;
-  padding: 32px 0 16px 0;
+  padding-top: 32px;
 }
 
 .section-grid {
@@ -246,6 +248,7 @@ display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: #f3f3f3;
+  padding-top: 16px;
 }
 
 .feature {
@@ -260,7 +263,6 @@ display: flex;
   width: 100%
 }
 
-
 .class-content {
   margin: 16px 0 24px 16px;
 }
@@ -274,19 +276,40 @@ display: flex;
 .class-content-courses p {
   margin: 8px 0 8px 0;
 }
-/*
-<div class="feature">
-  <div class="center">
 
-    <div class="image-container">
-      <img src="./resources/images/feature-1.png">
-    </div>
+/* section three */
+.thesis-exhibit .section-title {
+background-color: white;
+}
 
-    <div class="content">
-      <h2>Advanced, automatic, instant</h2>
-      <h3>Shutter speed, apperture and flash output adjust automatically</h3>
-    </div>
+.thesis-exhibit-content {
+  display: flex;
+}
 
-  </div>
-</div>
-*/
+.column-single-media video {
+  width: 100%;
+}
+
+/* footer */
+footer {
+  border-top: 1px solid #D3D3D3;
+}
+
+.footer-container {
+  display: flex;
+  margin: 16px 24px 32px 24px;
+}
+
+.footer-container ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer-container ul li {
+  padding-left: 16px;
+}
+.footer-container ul li a {
+  color: #888888;
+}
