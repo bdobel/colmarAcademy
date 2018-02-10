@@ -83,6 +83,7 @@ header {
 
 /* main */
 .main-content {
+  width: auto;
   padding-top: 64px;
 }
 
@@ -296,20 +297,30 @@ footer {
 }
 
 .footer-container {
-  display: flex;
+  width: 100%;
+  display: inline-flex;
   margin: 16px 24px 32px 24px;
 }
 
-.footer-container ul {
-  width: 100%;
+.copyright {
+  width:100%;
+}
+
+.footer-nav-links {
   display: flex;
-  align-items: center;
+  width: 100%;
   justify-content: flex-end;
 }
 
-.footer-container ul li {
+.footer-nav-links  ul {
+  display: flex;
+}
+
+.footer-nav-links ul li {
+
   padding-left: 16px;
 }
-.footer-container ul li a {
+
+.footer-nav-links ul li a {
   color: #888888;
 }
