@@ -1,23 +1,26 @@
-/* universal styles */
+/********** universal styles **********/
 html {
   font-family: "helvetica", sans-serif;
   font-size: 12px;
   color: #888888;
 }
 
-/* header */
+section {
+  border: 0.5px solid #f3f3f3;
+}
+
+/********** header **********/
 header {
   width: 100%;
   position: fixed;
   z-index: 1000;
-  height: 32px;
   padding-top: 16px;
   padding-bottom: 16px;
   display: flex;
   background-color: white;
 }
 
-/* nav for desktop */
+/********** nav for desktop **********/
 .navigation-desktop {
   width: 100%;
   display: inline-flex;
@@ -58,7 +61,7 @@ header {
   padding-left: 16px;
 }
 
-/* nav for mobile */
+/********** nav for mobile **********/
 .navigation-mobile {
   display: none;
 }
@@ -69,7 +72,7 @@ header {
   align-items: center;
 }
 
-/* nav bar media queries */
+/********** nav bar media queries **********/
 @media only screen and (max-width: 600px) {
   .navigation-desktop {
     display: none;
@@ -81,13 +84,12 @@ header {
   }
 }
 
-/* main */
+/********** main **********/
 .main-content {
-  width: auto;
   padding-top: 64px;
 }
 
-/* banner */
+/********** banner **********/
 .banner {
   display: inline-flex;
   background-color: #D3D3D3;
@@ -135,7 +137,7 @@ header {
   background-color: #4a4a4a;
 }
 
-/* banner media queries */
+/********** banner media queries **********/
 @media only screen and (max-width: 1024px) {
   .banner-title {
     font-size: 2.25rem;
@@ -156,7 +158,38 @@ header {
   }
 }
 
-/* section: one */
+@media only screen and (max-width: 600px) {
+  .banner {
+    display: block;
+    padding: 0;
+  }
+
+  .banner-image {
+    width: 100%;
+    padding: 0;
+  }
+
+  .banner-content {
+    padding: 32px 16px;
+    max-width: 100%;
+  }
+
+  .banner-title {
+    margin-bottom: 32px;
+    font-size: 3rem;
+  }
+
+  .button {
+    margin-top: 24px;
+    background-color: #888c91;
+  }
+}
+
+/********** section: one **********/
+.mobile {
+  display: none;
+}
+
 .first {
   display: inline-flex;
 }
@@ -198,7 +231,7 @@ header {
 display: flex;
 }
 
-.column-multi-subSection.dark {
+.dark {
   background-color: #f3f3f3;
 
 }
@@ -210,7 +243,6 @@ display: flex;
 
 .content-right-section-image img{
   width: 100%;
-  height: auto;
 }
 
 .content-right-section-content {
@@ -234,7 +266,61 @@ display: flex;
   color: #1fc3e0;
 }
 
-/* section two */
+/********** section one media queries **********/
+@media only screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+
+  .dark {
+    background-color: white;
+  }
+
+  .first {
+    display: flex;
+  }
+  .first .column-single {
+    display: none;
+  }
+
+  .column-multi {
+    width: 100%;
+  }
+
+  .column-multi-subSection {
+    display: block;
+    padding: 16px;
+  }
+
+  .content-right-section-image {
+    width: 100%;
+    padding: 0;
+  }
+
+  .content-right-section-image img {
+    width: 100%;
+  }
+
+
+  .content-right-section-content {
+    padding-left: 16px;
+  }
+
+  .content-right-section-title {
+    font-size: 1.75rem;
+    padding-top: 24px;
+  }
+
+  .readMore {
+    font-size: 1.25rem;
+    padding-bottom: 48px;
+  }
+}
+
+/********** section two **********/
 .section-title {
   color: #585858;
   font-size: 2rem;
@@ -242,26 +328,38 @@ display: flex;
   text-align: center;
   background-color: #f3f3f3;
   padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+
+.column-single {
+  padding: 32px 24px;
+  width: 60%;
+}
+
+.column-single-media img {
+  width: 100%
 }
 
 .section-grid {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: #f3f3f3;
-  padding-top: 16px;
+  padding: 0 72px;
 }
 
 .feature {
   overflow: visible;
-  width: 33%;
+  min-width: 25%;
   flex: 1;
   background-color: white;
   margin: 16px;
 }
 
 .class-image img {
-  width: 100%
+  width: 100%;
+  height: auto;
 }
 
 .class-content {
@@ -278,7 +376,45 @@ display: flex;
   margin: 8px 0 8px 0;
 }
 
-/* section three */
+/********** section two media queries **********/
+@media only screen and (max-width: 600px) {
+  .start-learning .section-title
+  ,.section-grid {
+    background-color: white;
+    padding-bottom: 8px;
+  }
+
+  .section-grid {
+    display: block;
+    padding: 0 16px;
+  }
+
+  .feature {
+    background-color: #D3D3D3;
+    margin-top: 8px;
+  }
+  .feature .class-image
+  , .feature .class-content-courses
+  , .feature .class-content-coursework {
+    display: none;
+  }
+
+  .class-content {
+    margin: 0;
+  }
+
+  .class-content-title h4 {
+    padding: 16px 16px 24px 16px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .feature {
+    min-width: 33%;
+  }
+}
+
+/********** section three **********/
 .thesis-exhibit .section-title {
 background-color: white;
 }
@@ -291,25 +427,41 @@ background-color: white;
   width: 100%;
 }
 
-/* footer */
-footer {
-  border-top: 1px solid #D3D3D3;
+/********** section three media queries **********/
+@media only screen and (max-width: 600px) {
+  .thesis-exhibit .column-multi {
+    display: none;
+  }
+
+  .thesis-exhibit .column-single {
+    padding: 0;
+    width: 100%;
+  }
+
+  .thesis-exhibit .column-single-title
+  , .thesis-exhibit .column-single-paragraph  {
+    display: none;
+  }
 }
 
+/********** footer **********/
 .footer-container {
   width: 100%;
   display: inline-flex;
-  margin: 16px 24px 32px 24px;
+  margin-top: 16px;
+  margin-bottom: 32px;
 }
 
 .copyright {
   width:100%;
+  margin-left: 24px;
 }
 
 .footer-nav-links {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  margin-right: 24px;
 }
 
 .footer-nav-links  ul {
@@ -317,7 +469,6 @@ footer {
 }
 
 .footer-nav-links ul li {
-
   padding-left: 16px;
 }
 
